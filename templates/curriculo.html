@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "navBar.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo José Gabriel</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style-curriculo.css')}}">
-</head>
+{% block conteudo %}
 
-<body>
+<section class="curriculo">
     <section class="cabecalho">
         <container>
             <h1>José Gabriel Ferreira Dos Santos</h1>
@@ -19,12 +13,12 @@
         <img src="{{url_for('static', filename='retrato.png')}}">
     </section>
     <h2>Sobre mim</h2>
-    <p>Estudante de desenvolvimento de software, com foco em web e Python, sou tecnico em administração, mas quando
-        conheci a area de desenvolvimento me apaixonei, hoje estou estudando para entrar atuar na área e conseguir minha
-        primeira experiencia.</p>
+    <p>Estudante de desenvolvimento de software, com foco em web e Python, sou técnico em administração, mas quando
+        conheci a área de desenvolvimento me apaixonei, hoje estou estudando para entrar atuar na área e conseguir minha
+        primeira experiência.</p>
     <h2>Formações Acadêmicas</h2>
     <section class="formacoes">
-        <h3>Tecnico em Administração</h3>
+        <h3>Técnico em Administração</h3>
         <p class="local-formacao">QI Faculdade & Escola Técnica - (2018-2022)</p>
         <h3>Informática para Web (Desenvolvimento Web)</h3>
         <p class="local-formacao">QI Faculdade & Escola Técnica - (2023-2024)</p>
@@ -32,11 +26,12 @@
         <p class="local-formacao">Cursos de Git, GitHub, HTML, CSS, JAVA, JavaScript, SQL e outros</p>
     </section>
     <h2>Objetivos</h2>
-    <p>Apesar de estar estudando principalmente desenvolvimento de software, pretendo estudar mais sobre ciencia de
-        dados e áreas a fins, pois se tornou de meu interesse após conhecer mais um pouco sobre a programação no mercado
+    <p>Apesar de estar estudando principalmente desenvolvimento de software, pretendo estudar mais sobre ciência de
+        dados e áreas afins, pois se tornou de meu interesse após conhecer mais um pouco sobre a programação no mercado
         financeiro, outra área de meu interesse, visto que vim antes da administração.</p>
     <p>Meu objetivo hoje é trabalhar para uma empresa que atue no mercado financeiro ou que trabalhe para uma, como um
         Banco, uma fintech, corretora de investimentos e etc.</p>
+</section>
+{% endblock %}
 </body>
-
 </html>

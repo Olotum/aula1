@@ -1,0 +1,39 @@
+{% extends "template.html" %}
+
+{% block block_titulo %}
+Chamados TI
+{% endblock %}
+{% block conteudo %}
+
+<h2 style="text-align: center; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tabela de
+    Chamados</h2>
+
+<table class="table table-hover table-bordered">
+
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Cód Usuário</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Chamado</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for chamado in chamados %}
+        <tr>
+            <td>{{ chamado.id}}</td>
+            <td>{{ chamado.codusuario}}</td>
+            <td>{{ chamado.usuarionome}}</td>
+            <td>{{ chamado.deschamado}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+<div class="diving">
+    <img class="imgpython" src="{{url_for('static', filename='retrato.png')}}" alt="">
+</div>
+
+{% endblock %}

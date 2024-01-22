@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo José Gabriel</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style-home.css')}}">
+</head>
+
+<body>
+    <nav class="navBar">
+        <a class="logo" href="https://www.instagram.com/joose.gabriiel/">José Gabriel F. Dos Santos</a>
+        <div class="n-logo">
+            <ul class="navBar">
+                <li>
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-gabriel-ferreira-dos-santos-621a23226/">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Olotum">GitHub</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5000/curriculo">Curriculo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block conteudo %}{% endblock %}
+</body>
+
+</html>

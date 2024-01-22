@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>
+
+        {%block titulo %}
+        {% endblock %}
+
+    </title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="container">
+                <a class="navbar-brand" href="{{url_for('pagina_chamados')}}">Chamados TI</a>
+                <a class="navbar-brand1" href="#">Home</a>
+                <a class="navbar-brand2" href="#">Downloads</a>
+
+                <button class="navba-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse">
+
+
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">Login</a>
+
+                    <a class="nav-link" href="#">Cadastro</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--     
+    <h2 style="text-align: center; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Bem vindo</h2>
+    <hr>
+    <div class="diving">
+        <img class="imgpython" src="{{url_for('static', filename='giphy.gif')}}" alt="">
+    </div> -->
+
+    {%block conteudo %}
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% extends "navBar.html" %}
+
+{% block conteudo %}
+<section class="tabela">
+    <h1 class="tituloTabela">Chamados</h1>
+    <table class="tabela-chamados">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Cód Usuário</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Chamado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for chamado in chamados %}
+            <tr>
+                <td>{{ chamado.id }}</td>
+                <td>{{ chamado.codusuario }}</td>
+                <td>{{ chamado.usuarionome }}</td>
+                <td>{{ chamado.deschamado }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
+</body>
+</html>
