@@ -5,50 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo José Gabriel</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        nav {
-            background-color: #645b5b;
-            padding: 5px;
-        }
-
-        .navBar {
-            display: flex;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            margin: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: rgb(66, 66, 66);
-        }
-    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='style-home.css')}}">
 </head>
 
 <body>
-    <nav>
-        <div>
+    <nav class="navBar">
+        <a class="logo" href="https://www.instagram.com/joose.gabriiel/">José Gabriel F. Dos Santos</a>
+        <div class="n-logo">
             <ul class="navBar">
-                <li>
-                    <a href="https://www.instagram.com/joose.gabriiel/">José Gabriel F. Dos Santos</a>
-                </li>
                 <li>
                     <a href="https://www.linkedin.com/in/jos%C3%A9-gabriel-ferreira-dos-santos-621a23226/">Linkedin</a>
                 </li>

@@ -1,0 +1,110 @@
+/* Reset básico */
+html, body {
+    margin: 0;/* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    font-family: sans-serif;/* Define fonte padrão */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0000a4;/*Cor de Fundo*/
+    padding: 0.8rem 0;/* Espaçamento interno */
+    margin-bottom: 0px;/* Remove margem inferior */
+    margin-top: 0;/* Remove margem superior */
+}
+
+.navbar .container {
+    display: flex;/* Layout flexível */
+    justify-content: space-between;/* Distribui itens nas extremidades */
+    align-items: center;/* Centraliza verticalmente */
+    
+}
+
+.navbar-brand {
+    color: #fff;/* Cor do texto branca */
+    font-size: 15px;/* Tamanho da fonte */
+    text-decoration: none;/* Remove sublinhado */
+    margin-left: 0.3cm;/* Margem esquerda */
+    font-family: Segoe UI;/* Fonte Segoe UI */
+    
+}
+.navbar-brand1 {
+    color: #fff; /* Cor do texto branca */
+    font-size: 13px;/* Tamanho da fonte */
+    text-decoration: none;/* Remove sublinhado */
+    margin-left: 0.3cm;/* Margem esquerda */
+    font-family: Segoe UI; /* Fonte Segoe UI */
+    
+    
+}
+.navbar-brand2 {
+    color: #ccc;/* Cor do texto cinza claro */
+    font-size: 13px; /* Tamanho da fonte */
+    text-decoration: none;/* Remove sublinhado */
+    margin-left: 0.3cm;/* Margem esquerda */
+    font-family: Segoe UI;/* Fonte Segoe UI */
+    transition: color 0.3s/* Anima a cor ao passar o mouse */
+    
+}
+.navbar-brand2:hover {
+    color: #fff; /* Cor branca ao passar o mouse */
+}
+
+
+.navbar-toggler {
+    border: none;/* Remove borda */
+    background-color: transparent;/* Remove fundo */
+    cursor: pointer;/* Define o cursor como ponteiro */
+}
+
+
+/* Dropdown da barra de navegação */
+.navbar-collapse {
+    display: flex;/* Layout flexível */
+    flex-wrap: wrap;/* Permite quebra de linha em telas menores */
+    align-items: center;/* Centraliza verticalmente */
+}
+
+.navbar-nav {
+    padding-left: 5px;/* Espaçamento interno à esquerda */
+    padding-right: 5px;/* Espaçamento interno à direita */
+}
+
+.navbar-nav .nav-link {
+    color: #ccc;/* Cor do texto cinza claro */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 13px;/* Tamanho da fonte */
+    margin-right: 0.2cm;/* Margem direita */
+    font-family: Segoe UI; /* Fonte Segoe UI */
+    transition: color 0.3s/* Anima a cor ao passar o mouse */
+}
+.navbar .nav-link:hover {
+    color: #fff; /* Cor branca ao passar o mouse */
+}
+
+.navbar-nav .nav-link1 {
+    color: #fff;/* Cor do texto branca */
+    text-decoration: none;/* Remove sublinhado */
+    font-size: 12px;/* Tamanho da fonte */
+    margin-left: 0.2cm; /* Margem esquerda */
+    font-family: Segoe UI;/* Fonte Segoe UI */
+    
+}
+
+
+
+
+
+h2{
+    margin-top: 0px;/* Remove margem superior */
+}
+.divimg{
+    text-align: center;/* Centraliza o conteúdo */
+  }
+
+  
+.imgpython{
+    width: 100px;/* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+  }
+

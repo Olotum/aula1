@@ -5,38 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo José Gabriel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.2;
-            margin: 20px;
-            align-items: center;
-            background-color: rgb(255, 254, 237);
-            color: rgb(36, 34, 30);
-        }
-
-        h2 {
-            border-bottom: 1px solid #000000;
-            padding-bottom: 5px;
-        }
-
-        img {
-            width: 150px;
-            height: auto;
-            float: right;
-            margin-top: 20px;
-            margin-right: 20px;
-        }
-
-        .cabecalho {
-            display: flex;
-            justify-content: space-between
-        }
-
-        .formacoes {
-            line-height: 0.3;
-        }
-    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='style-curriculo.css')}}">
 </head>
 
 <body>
@@ -47,7 +16,7 @@
             <p>joose.gabriiel@gmail.com</p>
             <p>Glória</p>
         </container>
-        <img src="retrato.jpg" alt="retrato">
+        <img src="{{url_for('static', filename='retrato.png')}}">
     </section>
     <h2>Sobre mim</h2>
     <p>Estudante de desenvolvimento de software, com foco em web e Python, sou tecnico em administração, mas quando
@@ -56,11 +25,11 @@
     <h2>Formações Acadêmicas</h2>
     <section class="formacoes">
         <h3>Tecnico em Administração</h3>
-        <p>QI Faculdade & Escola Técnica - (2018-2022)</p>
+        <p class="local-formacao">QI Faculdade & Escola Técnica - (2018-2022)</p>
         <h3>Informática para Web (Desenvolvimento Web)</h3>
-        <p>QI Faculdade & Escola Técnica - (2023-2024)</p>
+        <p class="local-formacao">QI Faculdade & Escola Técnica - (2023-2024)</p>
         <h3>Cursos Alura</h3>
-        <p>Cursos de Git, GitHub, HTML, CSS, JAVA, JavaScript, SQL e outros</p>
+        <p class="local-formacao">Cursos de Git, GitHub, HTML, CSS, JAVA, JavaScript, SQL e outros</p>
     </section>
     <h2>Objetivos</h2>
     <p>Apesar de estar estudando principalmente desenvolvimento de software, pretendo estudar mais sobre ciencia de
